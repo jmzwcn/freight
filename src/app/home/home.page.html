@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -17,6 +17,8 @@
   </ion-slides>
   <ion-img [src]="currentFreight?.icon" style="width: 50%;height: 50%;"></ion-img>
   {{currentFreight?.weight}} | {{currentFreight?.lwh}} | {{currentFreight?.cube}}
+  <br/>
+  <br/>
   <ion-list>
     <ion-item (click)="presentFromModal($event)">
       <ion-avatar slot="start">
@@ -38,7 +40,7 @@
     </ion-item>
   </ion-list>
   费用：${{fee}}
-  <ion-toolbar>
+  <ion-toolbar color="success">
     <ion-buttons slot="end">
       <ion-button>现在用车</ion-button>
       <ion-button>预约</ion-button>

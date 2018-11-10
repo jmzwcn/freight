@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 declare var AMap;
 
@@ -14,11 +15,13 @@ export class ModalComponent implements OnInit {
   iframe: SafeResourceUrl;
   constructor(
     private modalController: ModalController,
-    public sanitizer: DomSanitizer) {
+    public sanitizer: DomSanitizer,
+    private geolocation: Geolocation) {
     this.iframe = this.sanitizer.bypassSecurityTrustResourceUrl('https://m.amap.com/picker/?key=60d396703bef1a6a93d2eca45a70e764');
   }
 
   ngOnInit() {
+    this.geolocation.getCurrentPosition();
   }
 
   confirmLocation() {
