@@ -1,13 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+MERGED from [:barcodescanner-release-2.1.5:] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/2c4e4b100a2a6cd28262ceb76822b9dd/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/03695cbaf01b8a282f044df96a71e22f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4c75f08cc03980075c283bf0089a9ab2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/06a3b3e741b8f739c476aa9325be4a74/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0d7984eb418f0ef6467354eb97c256bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/096bdace58b2505ca4bf3e68ff46ec05/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/6f938f3d9cb52b08a70dca5c4bf18e4e/AndroidManifest.xml:17:1-22:12
 MERGED from [:CordovaLib] /home/jmzwcn/work/src/github.com/freight/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:20:1-27:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
-INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-14:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/901db68e05eec33ebd8102aa054adabb/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/603c2074b9b3e5e6c9404abeab6f6968/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/11fb873ea2c4382457d06097d1737087/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4b458a30d8c6634986f4242203daffa8/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:1-22:12
 	package
 		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:2:98-124
 		INJECTED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml
@@ -43,7 +54,9 @@ ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/ma
 	android:name
 		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:4:22-64
 application
-ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:5:5-12:19
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:5:5-14:19
+MERGED from [:barcodescanner-release-2.1.5:] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/2c4e4b100a2a6cd28262ceb76822b9dd/AndroidManifest.xml:11:5-12:19
+MERGED from [:barcodescanner-release-2.1.5:] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/2c4e4b100a2a6cd28262ceb76822b9dd/AndroidManifest.xml:11:5-12:19
 	android:supportsRtl
 		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:5:114-140
 	android:label
@@ -78,11 +91,79 @@ category#android.intent.category.LAUNCHER
 ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:9:17-77
 	android:name
 		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:9:27-74
+activity#com.google.zxing.client.android.CaptureActivity
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:9-311
+	android:clearTaskOnLaunch
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:19-51
+	android:windowSoftInputMode
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:261-308
+	android:exported
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:114-138
+	android:configChanges
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:52-113
+	android:theme
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:202-260
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:12:139-201
+activity#com.google.zxing.client.android.encode.EncodeActivity
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:9-112
+	android:label
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:19-40
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:41-109
 uses-sdk
-ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:5-74
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:15:5-74
+MERGED from [:barcodescanner-release-2.1.5:] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/2c4e4b100a2a6cd28262ceb76822b9dd/AndroidManifest.xml:7:5-9:41
+MERGED from [:barcodescanner-release-2.1.5:] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/barcodescanner-release-2.1.5.aar/2c4e4b100a2a6cd28262ceb76822b9dd/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/03695cbaf01b8a282f044df96a71e22f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/03695cbaf01b8a282f044df96a71e22f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4c75f08cc03980075c283bf0089a9ab2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/4c75f08cc03980075c283bf0089a9ab2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/06a3b3e741b8f739c476aa9325be4a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/06a3b3e741b8f739c476aa9325be4a74/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0d7984eb418f0ef6467354eb97c256bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0d7984eb418f0ef6467354eb97c256bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/096bdace58b2505ca4bf3e68ff46ec05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/096bdace58b2505ca4bf3e68ff46ec05/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/6f938f3d9cb52b08a70dca5c4bf18e4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/6f938f3d9cb52b08a70dca5c4bf18e4e/AndroidManifest.xml:20:5-44
 MERGED from [:CordovaLib] /home/jmzwcn/work/src/github.com/freight/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
 MERGED from [:CordovaLib] /home/jmzwcn/work/src/github.com/freight/platforms/android/CordovaLib/build/intermediates/manifests/full/debug/AndroidManifest.xml:25:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/901db68e05eec33ebd8102aa054adabb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/901db68e05eec33ebd8102aa054adabb/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/603c2074b9b3e5e6c9404abeab6f6968/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/603c2074b9b3e5e6c9404abeab6f6968/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/11fb873ea2c4382457d06097d1737087/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/11fb873ea2c4382457d06097d1737087/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4b458a30d8c6634986f4242203daffa8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/jmzwcn/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4b458a30d8c6634986f4242203daffa8/AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:42-71
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:15:42-71
 	android:minSdkVersion
-		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:13:15-41
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:15:15-41
+uses-permission#android.permission.CAMERA
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:16:5-65
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:16:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:17:5-69
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:17:22-66
+uses-feature#android.hardware.camera
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:18:5-84
+	android:required
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:18:58-81
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:18:19-57
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:19:5-81
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:19:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:20:5-79
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:20:22-76
+uses-feature#android.hardware.location.gps
+ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from /home/jmzwcn/work/src/github.com/freight/platforms/android/app/src/main/AndroidManifest.xml:21:19-63
