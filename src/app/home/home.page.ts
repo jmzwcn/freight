@@ -1,4 +1,9 @@
 import { Component } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+
+import { ModalComponent } from '../modal/modal.component';
+
+declare var AMap;
 
 @Component({
   selector: 'app-home',
@@ -7,6 +12,9 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   currentFreight: any;
+  from: any;
+  to: any;
+  fee: any;
   sliderConfig = {
     slidesPerView: 4,
     effect: 'flip'
@@ -20,11 +28,44 @@ export class HomePage {
     { 'name': '大货车', 'icon': 'assets/img/9.png', 'weight': '800公斤', 'lwh': '1.8*1.2*1.1米', 'cube': '2.4方' }
   ];
 
-  constructor() {
+  constructor(private modalController: ModalController) {
     this.currentFreight = this.freights[0];
   }
 
   itemClick(freight) {
     this.currentFreight = freight;
+  }
+
+  async presentFromModal(ev: any) {
+    const modal = await this.modalController.create({
+      component: ModalComponent,
+      componentProps: { value: 123 }
+    });
+
+    await modal.present();
+    const result = await modal.onDidDismiss();
+    this.from = result;
+  }
+
+  async presentToModal(ev: any) {
+    const modal = await this.modalController.create({
+      component: ModalComponent,
+      componentProps: { value: 123 }
+    });
+
+    await modal.present();
+    const result = await modal.onDidDismiss();
+    this.to = result;
+    this.computeFee();
+  }
+
+  computeFee() {
+    const p1 = this.from.data.location.split(',');
+    const p2 = this.to.data.location.split(',');
+    const price = 10;
+    // 返回 p1 到 p2 间的地面距离，单位：米
+    const dis = AMap.GeometryUtil.distance(p1, p2);
+    // alert(dis * price / 1000);
+    this.fee = dis * price / 1000;
   }
 }
