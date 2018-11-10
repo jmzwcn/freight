@@ -41,6 +41,9 @@
   </ion-list>
   费用：${{fee}}
   <ion-toolbar color="success">
+      <ion-buttons slot="start">
+          <ion-button (click)="scanQR()">扫码</ion-button>
+        </ion-buttons>
     <ion-buttons slot="end">
       <ion-button>现在用车</ion-button>
       <ion-button>预约</ion-button>

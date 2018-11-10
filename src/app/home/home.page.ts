@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalComponent } from '../modal/modal.component';
+import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
 
 declare var AMap;
 
@@ -28,7 +29,8 @@ export class HomePage {
   ];
 
   constructor(
-    private modalController: ModalController) {
+    private modalController: ModalController,
+    private barcodeScanner: BarcodeScanner) {
     this.currentFreight = this.freights[0];
   }
 
@@ -67,5 +69,17 @@ export class HomePage {
     const dis = AMap.GeometryUtil.distance(p1, p2);
     // alert(dis * price / 1000);
     this.fee = dis * price / 1000;
+  }
+
+  scanQR() {
+    const options: BarcodeScannerOptions = {
+      showTorchButton: true, // iOS and Android
+    };
+    this.barcodeScanner.scan(options).then(barcodeData => {
+      // console.log('Barcode data', barcodeData);
+      alert(barcodeData.text);
+    }).catch(err => {
+      console.log('Error', err);
+    });
   }
 }

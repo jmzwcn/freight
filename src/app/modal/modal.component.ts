@@ -11,7 +11,7 @@ declare var AMap;
 })
 export class ModalComponent implements OnInit {
   @ViewChild('map_container') map_container: ElementRef;
-  map: any; // 地图对象
+  // map: any; // 地图对象
   iframe: SafeResourceUrl;
   constructor(
     private modalController: ModalController,
@@ -54,4 +54,39 @@ export class ModalComponent implements OnInit {
     // });
   }
 
+
+  getLocation() {
+    this.geolocation.getCurrentPosition().then((resp) => {
+      AMap.service('AMap.Geocoder', () => {
+        const positionInfo = [resp.coords.longitude + '', resp.coords.latitude + ''];
+        // this.map.setCenter(positionInfo);
+
+        const geocoder = new AMap.Geocoder({});
+        geocoder.getAddress(positionInfo, (status, result) => {
+          if (status === 'complete' && result.info === 'OK') {
+            const marker = new AMap.Marker({
+              // map: this.map,
+              position: positionInfo
+            });
+            marker.setLabel({
+              offset: new AMap.Pixel(20, 20), // 修改label相对于maker的位置
+              content: result.regeocode.formattedAddress
+            });
+          } else {
+            console.log('获取地址失败');
+          }
+        });
+      });
+
+    }).catch((error) => {
+      console.log('Error getting location', error);
+    });
+
+    //  let watch = this.geolocation.watchPosition();
+    //  watch.subscribe((data) => {
+    //   // data can be a set of coordinates, or an error (if an error occurred).
+    //   // data.coords.latitude
+    //   // data.coords.longitude
+    //  });
+  }
 }
