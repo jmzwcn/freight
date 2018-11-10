@@ -7,6 +7,6 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  <iframe [src]="iframe" frameborder="0" #map_container class="map_container" scrolling="no"></iframe>
+<ion-content>
+  <iframe [src]="iframe" #map_container class="map_container" allow="geolocation"></iframe>
 </ion-content>
