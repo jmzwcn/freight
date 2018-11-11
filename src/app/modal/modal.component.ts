@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-// import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 declare var AMap;
 
@@ -14,8 +13,8 @@ export class ModalComponent implements OnInit {
   iframe: SafeResourceUrl;
 
   constructor(
-    private modalController: ModalController,
-    private sanitizer: DomSanitizer) {
+    private sanitizer: DomSanitizer,
+    private modalController: ModalController) {
     this.iframe = this.sanitizer.bypassSecurityTrustResourceUrl('https://m.amap.com/picker/?key=60d396703bef1a6a93d2eca45a70e764');
   }
 
@@ -23,14 +22,18 @@ export class ModalComponent implements OnInit {
   }
 
   ionViewDidEnter() {
-    const a = this.map_container.nativeElement.contentWindow;
-    a.postMessage('hello', '*');
-    window.addEventListener('message', (e) => {
-      this.modalController.dismiss(e.data);
-    }, false);
+    setTimeout(() => {
+      const cw = this.map_container.nativeElement.contentWindow;
+      this.map_container.nativeElement.onload = function () {
+        cw.postMessage('hello', 'https://m.amap.com/picker/');
+      };
+      window.addEventListener('message', (e) => {
+        this.modalController.dismiss(e.data);
+      }, false);
+    }, 2000);
   }
 
   getLocation() {
-    alert('here.');
+    alert('TODO.');
   }
 }

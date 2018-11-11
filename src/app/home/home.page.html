@@ -44,20 +44,20 @@
   <ion-list>
     <ion-item (click)="presentFromModal()">
       <ion-avatar slot="start">
-        起点
+        <ion-img src="assets/img/from.png"></ion-img>
       </ion-avatar>
       <ion-label>
-        <h2>{{from?.data.name}} </h2>
-        <p>{{from?.data.address}} </p>
+        <h2>{{from?.data.name}}</h2>
+        <p>{{from?.data.address}}</p>
       </ion-label>
     </ion-item>
     <ion-item (click)="presentToModal()">
       <ion-avatar slot="start">
-        终点
+        <ion-img src="assets/img/to.png"></ion-img>
       </ion-avatar>
       <ion-label>
-        <h2>{{to?.data.name}} </h2>
-        <p>{{to?.data.address}} </p>
+        <h2>{{to?.data.name}}</h2>
+        <p>{{to?.data.address}}</p>
       </ion-label>
     </ion-item>
   </ion-list>

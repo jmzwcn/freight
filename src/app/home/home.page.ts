@@ -35,6 +35,8 @@ export class HomePage {
     private modalController: ModalController,
     private barcodeScanner: BarcodeScanner) {
     this.currentFreight = this.freights[0];
+    this.from = { 'data': { 'name': '起点' } };
+    this.to = { 'data': { 'name': '终点' } };
   }
 
   // Method executed when the slides are changed
