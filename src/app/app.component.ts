@@ -16,9 +16,14 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: '货运订单',
       url: '/list',
       icon: 'list'
+    },
+    {
+      title: '我是司机',
+      url: '/driver',
+      icon: 'bus'
     }
   ];
 

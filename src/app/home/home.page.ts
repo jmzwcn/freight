@@ -35,8 +35,8 @@ export class HomePage {
     private modalController: ModalController,
     private barcodeScanner: BarcodeScanner) {
     this.currentFreight = this.freights[0];
-   // this.from = { 'data': { 'name': '起点' } };
-   // this.to = { 'data': { 'name': '终点' } };
+    // this.from = { 'data': { 'name': '起点' } };
+    // this.to = { 'data': { 'name': '终点' } };
   }
 
   // Method executed when the slides are changed
@@ -87,11 +87,13 @@ export class HomePage {
   }
 
   computeFee() {
-    const p1 = this.from.data.location.split(',');
-    const p2 = this.to.data.location.split(',');
-    // 返回 p1 到 p2 间的地面距离，单位：米
-    const dis = AMap.GeometryUtil.distance(p1, p2);
-    this.fee = dis * this.currentFreight.price / 1000;
+    if (this.from.data && this.to.data) {
+      const p1 = this.from.data.location.split(',');
+      const p2 = this.to.data.location.split(',');
+      // 返回 p1 到 p2 间的地面距离，单位：米
+      const dis = AMap.GeometryUtil.distance(p1, p2);
+      this.fee = dis * this.currentFreight.price / 1000;
+    }
   }
 
   scanQR() {
