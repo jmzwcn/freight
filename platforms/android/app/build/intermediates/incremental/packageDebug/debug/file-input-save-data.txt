@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Nov 11 12:54:35 CST 2018
+#Sun Nov 11 13:41:02 CST 2018
 1034.base=/home/jmzwcn/work/src/github.com/freight/platforms/android/app/build/intermediates/assets/debug
 881.path=www/svg/md-save.svg
 508.set=ASSET

@@ -4,7 +4,7 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      货运超人
+      货运物联
     </ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="scanQR()">
@@ -66,7 +66,7 @@
 <ion-footer>
   <ion-toolbar color="success">
     <ion-buttons slot="end">
-      <ion-button>现在用车</ion-button>
+      <ion-button (click)="beginNow()">现在用车</ion-button>
       <ion-button>
         <ion-datetime display-format="YYYY MMM, DD HH:mm">预约</ion-datetime>
       </ion-button>

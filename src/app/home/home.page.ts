@@ -105,4 +105,8 @@ export class HomePage {
       console.log('Error', err);
     });
   }
+
+  beginNow() {
+    alert('正在开发中.');
+  }
 }

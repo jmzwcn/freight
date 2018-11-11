@@ -24,9 +24,9 @@ export class ModalComponent implements OnInit {
   ionViewDidEnter() {
     setTimeout(() => {
       const cw = this.map_container.nativeElement.contentWindow;
-      this.map_container.nativeElement.onload = function () {
-        cw.postMessage('hello', 'https://m.amap.com/picker/');
-      };
+      // this.map_container.nativeElement.onload = function () {
+      cw.postMessage('hello', '*');
+      // };
       window.addEventListener('message', (e) => {
         this.modalController.dismiss(e.data);
       }, false);
