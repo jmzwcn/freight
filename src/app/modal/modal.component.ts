@@ -33,10 +33,6 @@ export class ModalComponent implements OnInit {
     }, 2000);
   }
 
-  ionViewDidLeave() {
-    this.modalController.dismiss();
-  }
-
   getLocation() {
     alert('TODO.');
   }
