@@ -4,27 +4,46 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>
-      附近
+      抢单
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <ion-card *ngFor="let user of users" (click)="showUserDetail(user)">
-      <ion-item class="activated">
+
+  <ion-tabs>
+    <!-- <ion-tab-bar slot="top"> -->
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-tab-button tab="home">附近</ion-tab-button>
+        <ion-tab-button tab="settings">城际</ion-tab-button>
+      </ion-buttons>
+    </ion-toolbar>
+    <!-- </ion-tab-bar> -->
+    <ion-tab tab="home">
+      <ion-card *ngFor="let user of users" (click)="showUserDetail(user)">
+        <ion-item class="activated">
           <ion-icon name="wifi" slot="start"></ion-icon>
           <ion-label>{{user.name}}</ion-label>
         </ion-item>
-    <ion-row>
-      <ion-col>
         <ion-row>
-            <ion-item><ion-icon name="pin" slot="start"></ion-icon>
-          <ion-label>{{user.time}}</ion-label>
-        </ion-item></ion-row>
-        <ion-row>起点:{{user.from}}</ion-row>
-        <ion-row>终点:{{user.to}}</ion-row>
-      </ion-col>
-      <ion-col text-center align-self-center style="font-size: 20px;color: red;font-weight: bolder">{{user.fee}}元</ion-col>
-    </ion-row>
-  </ion-card>
+          <ion-col>
+            <ion-row>
+              <ion-item>
+                <ion-icon name="pin" slot="start"></ion-icon>
+                <ion-label>{{user.time}}</ion-label>
+              </ion-item>
+            </ion-row>
+            <ion-row>起点:{{user.from}}</ion-row>
+            <ion-row>终点:{{user.to}}</ion-row>
+          </ion-col>
+          <ion-col text-center align-self-center style="font-size: 20px;color: red;font-weight: bolder">{{user.fee}}元</ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-tab>
+    <ion-tab tab="settings">Settings Content
+    </ion-tab>
+  </ion-tabs>
+
+
 </ion-content>
