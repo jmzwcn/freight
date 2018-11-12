@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 12 23:05:26 CST 2018
+#Mon Nov 12 23:15:54 CST 2018
 1034.base=/home/jmzwcn/work/src/github.com/freight/platforms/android/app/build/intermediates/assets/debug
 881.path=www/69.js
 508.set=ASSET
