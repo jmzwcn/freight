@@ -22,13 +22,13 @@
   </ion-slides>
   <ion-row style="height: 180px;" align-items-center>
     <ion-col (click)="slidePrev()">
-      <!-- <ion-icon *ngIf="showLeftButton" name="arrow-back"></ion-icon> -->
+      <ion-icon *ngIf="showLeftButton" name="arrow-back"></ion-icon>
     </ion-col>
     <ion-col>
       <ion-img [src]="currentFreight?.image" style="height: 150%;width: 150%;margin-left: -50px"></ion-img>
     </ion-col>
-    <ion-col (click)="slideNext()">
-      <!-- <ion-icon *ngIf="showRightButton" name="arrow-forward"></ion-icon> -->
+    <ion-col text-end (click)="slideNext()">
+      <ion-icon *ngIf="showRightButton" name="arrow-forward"></ion-icon>
     </ion-col>
   </ion-row>
   <ion-row>

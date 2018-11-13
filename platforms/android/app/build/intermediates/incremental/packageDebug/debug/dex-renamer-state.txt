@@ -1,4 +1,4 @@
-#Mon Nov 12 23:15:53 CST 2018
+#Tue Nov 13 23:15:07 CST 2018
 base.0=/home/jmzwcn/work/src/github.com/freight/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
