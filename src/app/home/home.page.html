@@ -42,25 +42,25 @@
   <br/>
   <br/>
   <ion-list>
-    <ion-item (click)="presentFromModal()">
-      <ion-avatar slot="start">
+    <ion-item>
+      <ion-avatar slot="start" (click)="presentFromModal()">
         <ion-img src="assets/img/from.png"></ion-img>
       </ion-avatar>
-      <ion-label>
-        <h2>起点</h2>
-        <h2>{{from?.data?.name}}</h2>
-        <p>{{from?.data?.address}}</p>
-      </ion-label>
+      <div>
+        <div (click)="presentFromModal()">起点</div>
+        {{from?.data?.address}}
+        <ion-input *ngIf="from?.data" [(ngModel)]="from?.data.name" class="input-css"></ion-input>
+      </div>
     </ion-item>
-    <ion-item (click)="presentToModal()">
-      <ion-avatar slot="start">
+    <ion-item>
+      <ion-avatar slot="start" (click)="presentToModal()">
         <ion-img src="assets/img/to.png"></ion-img>
       </ion-avatar>
-      <ion-label>
-        <h2>终点</h2>
-        <h2>{{to?.data?.name}}</h2>
-        <p>{{to?.data?.address}}</p>
-      </ion-label>
+      <div>
+        <div (click)="presentToModal()">终点</div>
+        {{to?.data?.address}}
+        <ion-input *ngIf="to?.data" [(ngModel)]="to?.data.name" class="input-css"></ion-input>
+      </div>
     </ion-item>
   </ion-list>
   费用：¥{{fee}}
