@@ -12,14 +12,14 @@
 <ion-content padding>
   <ion-tabs>
     <!-- <ion-tab-bar slot="top"> -->
-    <ion-toolbar style="display: inherit">
+    <ion-toolbar style="margin-top: -15px;height: 40px;">
       <ion-buttons slot="end">
         <ion-tab-button tab="home">附近</ion-tab-button>
         <ion-tab-button tab="settings">城际</ion-tab-button>
       </ion-buttons>
     </ion-toolbar>
     <!-- </ion-tab-bar> -->
-    <ion-tab tab="home" style="display: block;overflow-y: auto;padding-top: 30px">
+    <ion-tab tab="home" class="tab-css">
       <ion-card *ngFor="let user of users" (click)="showUserDetail(user)">
         <ion-item class="activated">
           <ion-label>{{user.name}}</ion-label>
@@ -43,8 +43,8 @@
         </ion-row>
       </ion-card>
     </ion-tab>
-    <ion-tab tab="settings">
-      Settings Content
+    <ion-tab tab="settings" class="tab-css">
+      <p>城际订单</p>
     </ion-tab>
   </ion-tabs>
 </ion-content>
